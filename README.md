@@ -1,10 +1,12 @@
-# PHP-FPM base image
+# Supported tags and respective `Dockerfile` links
 
 - 7.1, 7, latest [(Dockerfile.7.1)](https://github.com/modera/docker-php/tree/master/Dockerfile.7.1)
 - 7.0 [(Dockerfile.7.0)](https://github.com/modera/docker-php/tree/master/Dockerfile.7.0)
 - 5.6, 5 [(Dockerfile.5.6)](https://github.com/modera/docker-php/tree/master/Dockerfile.5.6)
 
-The following environment variables are also honored for configuring your PHP-FPM instance:
+# Environment variables
+
+The following environment variables are also honored for configuring your PHP instance:
 
 - -e `PHP_DATE_TIMEZONE=...` (defaults to Europe/Tallinn)
 - -e `PHP_FPM_MAX_EXECUTION_TIME=...` (defaults to 30)
