@@ -1,4 +1,4 @@
-FROM cravler/php:5.6-fpm
+FROM cravler/php:7.2-fpm
 
 LABEL maintainer "Sergei Vizel <http://github.com/cravler>"
 
@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         mysql-client \
         openssh-client \
         php-apcu \
-        php5.6-memcache \
+        php-memcached \
         wget && \
 
 # Remove cache
