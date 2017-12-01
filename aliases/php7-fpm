@@ -1,4 +1,4 @@
-FROM modera/php:7.1
+FROM modera/php:7.2
 
 LABEL maintainer "Sergei Vizel <http://github.com/cravler>"
 
