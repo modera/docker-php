@@ -41,5 +41,5 @@ add_docker_tag() {
     fi
 }
 
-add_docker_tag 7.3 7 latest
 add_docker_tag 5.6 5
+add_docker_tag 7.3 7 latest
