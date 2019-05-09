@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+echo "Building: ${DOCKER_REPO}"
+
+./docker-build.sh --repository=${DOCKER_REPO} --add-tags --push

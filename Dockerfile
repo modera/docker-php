@@ -1,4 +1,6 @@
-FROM cravler/php:7.0-fpm
+ARG VERSION_ARG=7.3-fpm
+
+FROM cravler/php:${VERSION_ARG}
 
 LABEL maintainer "Sergei Vizel <http://github.com/cravler>"
 
@@ -15,12 +17,7 @@ RUN \
         wget && \
 \
 # Remove cache
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
-\
-# Install PHP Coding Standards Fixer
-    curl -s http://get.sensiolabs.org/php-cs-fixer.phar -o php-cs-fixer && \
-    chmod a+x php-cs-fixer && \
-    mv php-cs-fixer /usr/local/bin/php-cs-fixer
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 ADD cf-dry.sh /usr/local/bin/cf-dry
 ADD cf-fix.sh /usr/local/bin/cf-fix
