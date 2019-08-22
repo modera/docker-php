@@ -12,6 +12,8 @@ RUN \
 # All our dependencies, in alphabetical order (to ease maintenance)
     apt-get update && apt-get install -y --no-install-recommends \
         cron \
+        libfcgi0ldbl \
+        libfcgi-bin \
         mysql-client \
         openssh-client \
         wget && \

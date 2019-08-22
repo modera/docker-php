@@ -1,5 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
+- 7.4
 - 7.3, 7, latest [(Dockerfile)](https://github.com/modera/docker-php/tree/master/Dockerfile)
 - 7.2
 - 7.1
