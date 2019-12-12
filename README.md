@@ -3,10 +3,10 @@
 - 7.4, 7, latest [(Dockerfile)](https://github.com/modera/docker-php/tree/master/Dockerfile)
 - 7.3
 - 7.2
-- 7.1
 
 # End of life
 
+- 7.1
 - 7.0
 - 5.6, 5
 
