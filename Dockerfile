@@ -11,8 +11,8 @@ RUN \
 \
 # Immortal repo installing
     curl -L https://packagecloud.io/immortal/immortal/gpgkey 2> /dev/null | apt-key add - &>/dev/null && \
-    echo 'deb https://packagecloud.io/immortal/immortal/ubuntu/ bionic main' > /etc/apt/sources.list.d/immortal_immortal.list && \
-    echo 'deb-src https://packagecloud.io/immortal/immortal/ubuntu/ bionic main' >> /etc/apt/sources.list.d/immortal_immortal.list && \
+    echo 'deb https://packagecloud.io/immortal/immortal/ubuntu/ focal main' > /etc/apt/sources.list.d/immortal_immortal.list && \
+    echo 'deb-src https://packagecloud.io/immortal/immortal/ubuntu/ focal main' >> /etc/apt/sources.list.d/immortal_immortal.list && \
 \
 # All our dependencies, in alphabetical order (to ease maintenance)
     apt-get update && apt-get install -y --no-install-recommends \
