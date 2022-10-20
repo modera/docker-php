@@ -46,7 +46,7 @@ build_docker_image() {
 #build_docker_image 7.0
 #build_docker_image 7.1
 #build_docker_image 7.2
+#build_docker_image 7.3
 
-build_docker_image 7.3
 build_docker_image 7.4    7
 build_docker_image 8.0    8 latest
