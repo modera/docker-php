@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
-- 8.0, 8, latest [(Dockerfile)](https://github.com/modera/docker-php/tree/master/Dockerfile)
+- 8.1, 8, latest [(Dockerfile)](https://github.com/modera/docker-php/tree/master/Dockerfile)
+- 8.0
 - 7.4, 7
 
 # End of life
