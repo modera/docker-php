@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+DOCKER_REPO=${DOCKER_REPO:-modera/php}
+DOCKER_PUSH=${DOCKER_PUSH:-YES}
+
+PUSH_IMAGE=""
+if [ "YES" = "${DOCKER_PUSH}" ]; then
+    PUSH_IMAGE="--push"
+fi
+
 echo "Building: ${DOCKER_REPO}"
 
-./docker-build.sh --repository=${DOCKER_REPO} --add-tags --push
+./scripts/docker-build.sh --repository=${DOCKER_REPO} --add-tags "${PUSH_IMAGE}"
