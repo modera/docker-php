@@ -1,4 +1,4 @@
-ARG VERSION_ARG=8.1-fpm
+ARG VERSION_ARG=8.2-fpm
 
 FROM cravler/php:${VERSION_ARG}
 
