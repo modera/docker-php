@@ -1,16 +1,16 @@
-ARG VERSION_ARG=8.3-fpm
+ARG VERSION_ARG=8.4-fpm
 
 FROM cravler/php:${VERSION_ARG}
 
-LABEL maintainer "Sergei Vizel <http://github.com/cravler>"
+LABEL maintainer="Sergei Vizel <http://github.com/cravler>"
 
 # Common environment variables
-ENV TZ Europe/Tallinn
+ENV TZ=Europe/Tallinn
 
 RUN \
 \
 # Immortal repo installing
-    curl -s https://packagecloud.io/install/repositories/immortal/immortal/script.deb.sh | bash && \
+    curl -s https://packagecloud.io/install/repositories/immortal/immortal/script.deb.sh | os=ubuntu dist=jammy bash && \
 \
 # All our dependencies, in alphabetical order (to ease maintenance)
     apt-get update && apt-get install -y --no-install-recommends \
