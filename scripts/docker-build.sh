@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 WORKDIR="$(dirname ${SCRIPT_DIR})"
 
@@ -87,8 +89,8 @@ build_docker_image() {
         else
             du -hs /tmp/php.${TAG}
             tar -tf /tmp/php.${TAG} | awk -F/ '{print $1}' | uniq
-            echo ""
         fi
+        echo ""
     else
         if [ "YES" = "${PUSH_IMAGE}" ]; then
             docker push ${REPOSITORY}:${TAG}
@@ -116,4 +118,5 @@ echo ""
 build_docker_image 8.1
 build_docker_image 8.2
 build_docker_image 8.3
-build_docker_image 8.4    8 latest
+build_docker_image 8.4
+build_docker_image 8.5    8 latest
