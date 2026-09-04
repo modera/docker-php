@@ -114,8 +114,8 @@ echo ""
 #build_docker_image 7.3
 #build_docker_image 7.4    7
 #build_docker_image 8.0
+#build_docker_image 8.1
 
-build_docker_image 8.1
 build_docker_image 8.2
 build_docker_image 8.3
 build_docker_image 8.4
